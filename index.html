@@ -1,0 +1,110 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <title>W3.CSS Template</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <style>
+  body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+  body {font-size:16px;}
+  .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+  .w3-half img:hover{opacity:1}
+  </style>
+  <body>
+
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+    <div class="w3-container">
+      <h3 class="w3-padding-8" style="text-align:center; font-style: bold; font-size:16px; "><img src="gerb.png" style="width:220px" alt="">TARAS SHEVCHENKO NATIONAL UNIVERSITY OF KYIV</h3>
+    </div>
+    <div class="w3-bar-block">
+      <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+      <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">General Information</a>
+      <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Important Dates</a>
+    </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+    <span></span>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+    <!-- Header -->
+    <div class="w3-container" style="margin-top:55px; text-align:center;" id="showcase">
+      <h1 style="font-size:30px;" style=" text-align:center;"><b>MINISTRY OF EDUCATION AND SCIENCE OF UKRAINE<br>TARAS SHEVCHENKO NATIONAL UNIVERSITY OF KYIV<br> INSTITUTE OF EDUCATION CONTENT MODERNIZATION</b></h1>
+      <img src="http://fit.univ.kiev.ua/wp-content/uploads/2017/01/14375155657-1shev-1.jpg" width="500px" style="border-radius:5px;   max-width: 100%;
+    height: auto;">
+      <h1 class="w3-xxlarge w3-text-red"><b>ІI INTERNATIONAL  SCIENTIFIC AND PRACTICAL CONFERENCE “PROBLEMS of CYBERSECURITY OF INFORMATION AND TELECOMUNICATION SYSTEMS”  (PCSI & ТS)</b></h1>
+      <h1 class="w3-xxlarge w3-text-red"><b>11-12 April 2019 </b></h1>
+    </div>
+    <!-- Services -->
+    <div class="w3-container" id="services" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-red"><b>General Information</b></h1>
+      <hr style="width:50px;border:5px solid red" class="w3-round">
+      <div style="font-size:24px;">
+      <p><b>Dear colleagues, friends!</b>
+      <p style="text-indent:64px; text-align:justify; " >Applications for participation in the <b>2nd INTERNATIONAL SCIENTIFIC-PRACTICAL CONFERENCE "PROBLEMS OF CYBER SECURITY OF INFORMATION AND TELECOMMUNICATION SYSTEMS" (PCSI&ТS)</b> are continuing, which will be held on April 11-12, 2019 at the address: 24 Bohdan Hawrylyshyn Str., Kyiv, Ukraine, 04116, phone (044) 481-44-78.
+      </p>
+      </div>
+    </div>
+
+    <!-- Designers -->
+    <div class="w3-container" id="designers" style="margin-top:75px; text-align: justify; font-size:24px;">
+      <h1 class="w3-xxxlarge w3-text-red"><b>Important Dates</b></h1>
+      <hr style="width:50px;border:5px solid red" class="w3-round">
+      <p style=""><b>  March 11</b> is the deadline for registration and submission of abstracts.
+        <p>Until <b>March 15 - transfer of the organizational fee.</b>
+        <p><b>11 April, 2019:</b>
+        <br>- from 09:00 to 10:00 – registration of conference participants (4th floor)
+        <br>- from 09:00 to 16:00 – plenary meeting (Assembly Hall).
+        <br>- from 12:00 to 13:00
+        <br>– a break in the meeting.
+        <br>- from 16:30 – friendly dinner
+        <p><b>12 April, 2019:</b>
+        <br>- from 10:00 to 1600 the continuation of the Conference. Sectional meetings (see your audience number in the Conference program).
+        <br>- from 1430 – conclusions of the conference (Assembly Hall)
+        <p style="text-indent:64px;">For more information, see the link below: Site of the Department of Cyber security and Information Protection of Taras Shevchenko  National University of Kyiv – <a href="http://kbzi.knu.ua"> http://kbzi.knu.ua </a> Phone: (044) 481-44-78.
+        <p> Or you can just scan this QR-code:
+          <div style="text-align: center;">
+        <p><img src="qr-code-1.jpg">
+      <p><b>Faithfully yours, organizing committee of the conference.</b></p>
+    </div>
+    </div>
+
+  <!-- End page content -->
+  </div>
+
+  <!-- W3.CSS Container -->
+
+  <script>
+  // Script to open and close sidebar
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+  }
+
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+  }
+
+  // Modal Image Gallery
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }
+  </script>
+
+  </body>
+  </html>
