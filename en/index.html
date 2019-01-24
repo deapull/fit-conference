@@ -6,107 +6,206 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 <style>
-body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
-body {font-size:16px;}
-.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
-.w3-half img:hover{opacity:1}
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: "Poppins", sans-serif
+  }
+
+  body {
+    font-size: 16px;
+  }
+
+  .w3-half img {
+    margin-bottom: -6px;
+    margin-top: 16px;
+    opacity: 0.8;
+    cursor: pointer
+  }
+
+  .w3-half img:hover {
+    opacity: 1
+  }
 </style>
+
 <body>
 
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
-  <div class="w3-container">
-    <h3 class="w3-padding-8" style="text-align:center; font-style: bold; font-size:16px; "><img src="/img/gerb.PNG" style="width:220px" alt="">TARAS SHEVCHENKO NATIONAL UNIVERSITY OF KYIV</h3>
-  </div>
-  <div class="w3-bar-block">
-    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
-    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">General Information</a>
-    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Important Dates</a>
-    <a href="/" class="w3-bar-item w3-button w3-hover-white">Українська</a>
-  </div>
-</nav>
-
-<!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
-  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
-  <span></span>
-</header>
-
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:340px;margin-right:40px">
-
-  <!-- Header -->
-  <div class="w3-container" style="margin-top:55px; text-align:center;" id="showcase">
-    <h1 style="font-size:30px;" style=" text-align:center;"><b>MINISTRY OF EDUCATION AND SCIENCE OF UKRAINE<br>TARAS SHEVCHENKO NATIONAL UNIVERSITY OF KYIV<br> INSTITUTE OF EDUCATION CONTENT MODERNIZATION</b></h1>
-    <img src="/img/main-image.jpg" width="500px" style="border-radius:5px;   max-width: 100%;
-  height: auto;">
-    <h1 class="w3-xxlarge w3-text-red"><b>ІI INTERNATIONAL  SCIENTIFIC AND PRACTICAL CONFERENCE “PROBLEMS of CYBERSECURITY OF INFORMATION AND TELECOMUNICATION SYSTEMS”  (PCSIТS)</b></h1>
-    <h1 class="w3-xxlarge w3-text-red"><b>11-12 April 2019 </b></h1>
-  </div>
-  <!-- Services -->
-  <div class="w3-container" id="services" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>General Information</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-    <div style="font-size:24px;">
-    <p><b>Dear colleagues, friends!</b>
-    <p style="text-indent:64px; text-align:justify; " >Applications for participation in the <b>2nd INTERNATIONAL SCIENTIFIC-PRACTICAL CONFERENCE "PROBLEMS OF CYBER SECURITY OF INFORMATION AND TELECOMMUNICATION SYSTEMS" (PCSI&ТS)</b> are continuing, which will be held on April 11-12, 2019 at the address: 24 Bohdan Hawrylyshyn Str., Kyiv, Ukraine, 04116, phone (044) 481-44-78.
-    </p>
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;"
+    id="mySidebar"><br>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close
+      Menu</a>
+    <div class="w3-container">
+      <h3 class="w3-padding-8" style="text-align:center; font-style: bold; font-size:16px; "><img src="/img/gerb.PNG"
+          style="width:220px" alt="">TARAS SHEVCHENKO NATIONAL UNIVERSITY OF KYIV</h3>
     </div>
-  </div>
+    <div class="w3-bar-block">
+      <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+      <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">General Information</a>
+      <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Important Dates</a>
+      <a href="/" class="w3-bar-item w3-button w3-hover-white">Українська</a>
+    </div>
+  </nav>
 
-  <!-- Designers -->
-  <div class="w3-container" id="designers" style="margin-top:75px; text-align: justify; font-size:24px;">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Important Dates</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p style=""><b>  March 11</b> is the deadline for registration and submission of abstracts.
-      <p>Until <b>March 15 - transfer of the organizational fee.</b>
-      <p><b>11 April, 2019:</b>
-      <br>- from 09:00 to 10:00 – registration of conference participants (4th floor).
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+    <span></span>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+    <!-- Header -->
+    <div class="w3-container" style="margin-top:55px; text-align:center;" id="showcase">
+      <h1 style="font-size:30px;" style=" text-align:center;"><b>MINISTRY OF EDUCATION AND SCIENCE OF UKRAINE<br>TARAS
+          SHEVCHENKO NATIONAL UNIVERSITY OF KYIV<br> INSTITUTE OF EDUCATION CONTENT MODERNIZATION</b></h1>
+      <img src="/img/main-image.jpg" width="500px" style="border-radius:5px;   max-width: 100%;
+  height: auto;">
+      <h1 class="w3-xxlarge w3-text-red"><b>ІI INTERNATIONAL SCIENTIFIC AND PRACTICAL CONFERENCE “PROBLEMS of
+          CYBERSECURITY OF INFORMATION AND TELECOMUNICATION SYSTEMS” (PCSIТS)</b></h1>
+      <h1 class="w3-xxlarge w3-text-red"><b>11-12 April 2019 </b></h1>
+    </div>
+    <!-- Services -->
+    <div class="w3-container" id="services" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-red"><b>General Information</b></h1>
+      <hr style="width:50px;border:5px solid red" class="w3-round">
+      <div style="font-size:24px;">
+        <p><b>Dear colleagues, friends!</b>
+          <p style="text-indent:64px; text-align:justify; ">Applications for participation in the <b>2nd INTERNATIONAL
+              SCIENTIFIC-PRACTICAL CONFERENCE "PROBLEMS OF CYBER SECURITY OF INFORMATION AND TELECOMMUNICATION SYSTEMS"
+              (PCSI&ТS)</b> are continuing, which will be held on April 11-12, 2019 at the address: 24 Bohdan
+            Hawrylyshyn Str., Kyiv, Ukraine, 04116, phone (044) 481-44-78.
+          </p>
+        </p>
+      </div>
+    </div>
+
+    <!-- Designers -->
+    <div class="w3-container" id="designers" style="margin-top:75px; text-align: justify; font-size:24px;">
+      <h1 class="w3-xxxlarge w3-text-red"><b>Important Dates</b></h1>
+      <hr style="width:50px;border:5px solid red" class="w3-round">
+      <p style=""><b> March 11</b> is the deadline for registration and submission of abstracts.</p>
+      <p>Until <b>March 15 - transfer of the organizational fee.</b></p>
+      <p><b>11 April, 2019:</b></p>
+      - from 09:00 to 10:00 – registration of conference participants (4th floor).
       <br>- from 09:00 to 16:00 – plenary meeting (Assembly Hall).
       <br>- from 12:00 to 13:00 – a break in the meeting.
       <br>- from 16:30 – friendly dinner.
-      <p><b>12 April, 2019:</b>
-      <br>- from 10:00 to 16:00 the continuation of the Conference. Sectional meetings (see your audience number in the Conference program).
+      <p><b>12 April, 2019:</b></p>
+      - from 10:00 to 16:00 the continuation of the Conference. Sectional meetings (see your audience
+      number in the Conference program).
       <br>- from 14:30 – conclusions of the conference (Assembly Hall)
       <p>For more information, see the link below:</p>
-      <p>Site of the Department of Cyber security and Information Protection of Taras Shevchenko  National University of Kyiv – <a href="http://kbzi.knu.ua"> http://kbzi.knu.ua </a></p>
+      <p>Site of the Department of Cyber security and Information Protection of Taras Shevchenko National
+        University of Kyiv – <a href="http://kbzi.knu.ua"> http://kbzi.knu.ua </a></p>
       <p>Phone: (044) 481-44-78.</p>
-      <p>Or you can just scan this QR-code:
-        <div style="text-align: center;">
-      <p><img src="/img/qr-code-1.jpg">
-    <p><b>Faithfully yours, organizing committee of the conference.</b></p>
+      <p>Or you can just scan this QR-code:</p>
+      <div style="text-align: center;">
+        <p><img src="/img/qr-code-1.jpg">
+          <p><b>Faithfully yours, organizing committee of the conference.</b></p>
+      </div>
+
+      <div class="w3-container" id="prog-com" style="margin-top:75px; text-align: justify; font-size:24px;">
+        <h1 class="w3-xxxlarge w3-text-red"><b>PROGRAM COMMITEE</b></h1>
+        <hr style="width:50px;border:5px solid red" class="w3-round">
+        <p>
+          <b><i>Chairman:</i></b><br>
+          <b>Zakusilo Oleh</b>, Academician of Academy of Educational Sciences of Ukraine, Doctor of Physical
+          and Mathematical Science, Professor, the first vice-rector of Taras Shevchenko National University of
+          Kyiv.
+        </p>
+        <p>
+          <b><i>Vice-Chairman:</i></b><br>
+          <b>Oksiiuk Oleksandr</b>, Doctor of Engineering Science, Professor, Taras Shevchenko National
+          University of Kyiv, Head of Department of Cyber security and Information Protection of Taras
+          Shevchenko National University of Kyiv.
+        </p>
+        <p>
+          <b><i>Program Committee Members:</i></b><br>
+          <b>Blaunstein Natan</b>, Doctor of Engineering Science, Proffesor., Ben-Gurion University of the
+          Negev (Israel).<br>
+          <b>Eugenia Kovacheva</b>, PhD., professor University of Library Studies and Information Technologies,
+          Sofia, Bulgaria.<br>
+          <b>Georgi Dimitroy</b>, PhD., professor University of Library Studies and Information Technologies,
+          Sofia, Bulgaria.<br>
+          <b>Iavich Maksim</b>, PhD., professor, President of scientific cyber security association. Caucasus
+          University, Tbilisi.<br>
+          <b>Blintsov Volodimir</b>, Doctor of Engineering Science, Professor, vice-rector of scientific work
+          of Admiral Makarov National University of Shipbuilding.<br>
+          <b>Buriachok Volodimir</b>, Doctor of Engineering Science, Professor, Professor of Department of
+          information technologies and mathematics of Borys Hrinchenko Kyiv University.<br>
+          <b>Bichkov Alexey</b>, PhD in Physical and Mathematical Science, Assosiate Orofessor, Head of
+          Department of program systems and technologies of the faculty of information technologies of Taras
+          Shevchenko National University of Kyiv.<br>
+          <b>Vasiliu Yevgen</b>, Doctor of Engineering Science, Professor, director of Educational and
+          scientific institute "Radio, television and informational security" Odessa National Academy of
+          Telecommunications.<br>
+          <b>Horobenko Ivan</b>, Doctor of Engineering Science, Professor, Professor of Department of
+          informational systems and technologies security of V. N. Karazin Kharkiv National University.<br>
+          <b>Hrebenyuk Alexey</b>, Director of "High-tech bureau".<br>
+          <b>Dashkovska Olena</b>, PhD in Chemistry Science, Assosiate professor, senior researcher of the
+          department of modernization of higher education of State Scientific Institution "Institute of the
+          Modernization of the Content of Education".<br>
+          <b>Dovbeshko Stanislav</b>, PhD in Engineering Science, Associate Professor, Director of Scientific
+          and educational institute of information protection, State University of Telecommunications.<br>
+          <b>Dudykevych Valerii</b>, Doctor of Engineering Science, Professor, Head of Department of
+          information protection of Lviv Polytechnic National University.<br>
+          <b>Karpinskyi Mykola</b>, Doctor of Engineering Science, Professor, Head of Department of computer
+          science and automation of University in Bielsko-Biała (the Republic of Poland).<br>
+          <b>Korneiko Oleksandr</b>, PhD in Engineering Science, Professor, G.E. Pukhov Institute of Simulation
+          Problems in Energy Engineering down the NAS of Ukraine.<br>
+          <b>Kulianytsia Oleksandr</b>, PhD in Engineering Science, General Director of "Krypton".<br>
+          <b>Machalin Igor</b>, Doctor of Engineering Science, Professor, Director of Educational-Scientific
+          Institute of Aeronavigation, Electronics and Telecommunications of NAU. <br>
+          <b>Machuskyi Yevhenii</b>, Doctor of Engineering Science, Professor, Honored Worker of science and
+          technology of Ukraine, Head of Department of physical and technical means of information protection
+          of National Technical University of Ukraine "Igor Sikorsky Kyiv Polytechnic Institute".<br>
+          <b>Politanskyi Leonid</b>, Doctor of Engineering Science, Professor, Head of Department of radio
+          engineering and informational security of Yuriy Fedkovych Chernivtsi National University.<br>
+          <b>Skrynyk Oleksandr</b>, Advisor to the Chairman of the State of Special Communications and
+          Information Protection Service of Ukraine.<br>
+          <b>Subach Ihor</b>, Doctor of Engineering Science, Associate Professor, Head of Department of
+          Institute of special communications of National Technical University of Ukraine "Igor Sikorsky Kyiv
+          Polytechnic Institute".<br>
+          <b>Tadeiev Petro</b>, PhD in Physical and Mathematical Sciences, Doctor of Pedagogical Science,
+          Professor, National University of Water and Environment Engineering, Rivne.
+        </p>
+      </div>
+    </div>
+
+    <!-- End page content -->
   </div>
-  </div>
 
-<!-- End page content -->
-</div>
+  <!-- W3.CSS Container -->
 
-<!-- W3.CSS Container -->
+  <script>
+    // Script to open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
 
-<script>
-// Script to open and close sidebar
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("myOverlay").style.display = "block";
-}
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
 
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("myOverlay").style.display = "none";
-}
-
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-</script>
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+  </script>
 
 </body>
+
 </html>
