@@ -1,211 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>PCSIТS</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-<style>
-  body,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
+  <title>PCSIТS</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
     font-family: "Poppins", sans-serif
-  }
-
-  body {
+    }
+    body {
     font-size: 16px;
-  }
-
-  .w3-half img {
+    }
+    .w3-half img {
     margin-bottom: -6px;
     margin-top: 16px;
     opacity: 0.8;
     cursor: pointer
-  }
-
-  .w3-half img:hover {
+    }
+    .w3-half img:hover {
     opacity: 1
-  }
-</style>
-
-<body>
-
-  <!-- Sidebar/menu -->
-  <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;"
-    id="mySidebar"><br>
-    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close
+    }
+  </style>
+  <body>
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;"
+      id="mySidebar">
+      <br>
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close
       Menu</a>
-    <div class="w3-container">
-      <h3 class="w3-padding-8" style="text-align:center; font-style: bold; font-size:16px; "><img src="/img/gerb.PNG"
+      <div class="w3-container">
+        <h3 class="w3-padding-8" style="text-align:center; font-style: bold; font-size:16px; "><img src="/img/gerb.PNG"
           style="width:220px" alt="">TARAS SHEVCHENKO NATIONAL UNIVERSITY OF KYIV</h3>
-    </div>
-    <div class="w3-bar-block">
-      <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
-      <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">General Information</a>
-      <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Important Dates</a>
-      <a href="/" class="w3-bar-item w3-button w3-hover-white">Українська</a>
-    </div>
-  </nav>
-
-  <!-- Top menu on small screens -->
-  <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
-    <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
-    <span></span>
-  </header>
-
-  <!-- Overlay effect when opening sidebar on small screens -->
-  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-  <!-- !PAGE CONTENT! -->
-  <div class="w3-main" style="margin-left:340px;margin-right:40px">
-
-    <!-- Header -->
-    <div class="w3-container" style="margin-top:55px; text-align:center;" id="showcase">
-      <h1 style="font-size:30px;" style=" text-align:center;"><b>MINISTRY OF EDUCATION AND SCIENCE OF UKRAINE<br>TARAS
-          SHEVCHENKO NATIONAL UNIVERSITY OF KYIV<br> INSTITUTE OF EDUCATION CONTENT MODERNIZATION</b></h1>
-      <img src="/img/main-image.jpg" width="500px" style="border-radius:5px;   max-width: 100%;
-  height: auto;">
-      <h1 class="w3-xxlarge w3-text-red"><b>ІI INTERNATIONAL SCIENTIFIC AND PRACTICAL CONFERENCE “PROBLEMS of
-          CYBERSECURITY OF INFORMATION AND TELECOMUNICATION SYSTEMS” (PCSIТS)</b></h1>
-      <h1 class="w3-xxlarge w3-text-red"><b>11-12 April 2019 </b></h1>
-    </div>
-    <!-- Services -->
-    <div class="w3-container" id="services" style="margin-top:75px">
-      <h1 class="w3-xxxlarge w3-text-red"><b>General Information</b></h1>
-      <hr style="width:50px;border:5px solid red" class="w3-round">
-      <div style="font-size:24px;">
-        <p><b>Dear colleagues, friends!</b>
+      </div>
+      <div class="w3-bar-block">
+        <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+        <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">General Information</a>
+        <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Important Dates</a>
+        <a href="#prog-com" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Program Committee</a>
+        <a href="#org-com" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Organizational Committee</a>
+        <a href="#researcher" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Research Secretary Of The Conference</a>
+        <a href="#organizers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Organizers Of The Conference</a>
+        <a href="#theme" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Thematic Conference</a>
+        <a href="#conditions" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Conditions Of Participants In The Conference And Publishing In The Collection Of Reports</a>
+        <a href="#requirements" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Requirements To The Study Of The Report</a>
+        <a href="#registration" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Registration Form</a>
+        <a href="#secretariat" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Secretariat Of The Conference</a>
+        <a href="#bank" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Bank Details</a>
+        <a href="/" class="w3-bar-item w3-button w3-hover-white">Українська</a>
+      </div>
+    </nav>
+    <!-- Top menu on small screens -->
+    <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+      <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+      <span></span>
+    </header>
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:340px;margin-right:40px">
+      <!-- Header -->
+      <div class="w3-container" style="margin-top:55px; text-align:center;" id="showcase">
+        <h1 style="font-size:30px;" style=" text-align:center;"><b>MINISTRY OF EDUCATION AND SCIENCE OF UKRAINE<br>TARAS
+          SHEVCHENKO NATIONAL UNIVERSITY OF KYIV<br> INSTITUTE OF EDUCATION CONTENT MODERNIZATION</b>
+        </h1>
+        <img src="/img/main-image.jpg" width="500px" style="border-radius:5px;   max-width: 100%;
+          height: auto;">
+        <h1 class="w3-xxlarge w3-text-red"><b>ІI INTERNATIONAL SCIENTIFIC AND PRACTICAL CONFERENCE “PROBLEMS OF
+          CYBERSECURITY OF INFORMATION AND TELECOMUNICATION SYSTEMS” (PCSIТS)</b>
+        </h1>
+        <h1 class="w3-xxlarge w3-text-red"><b>11-12 April 2019 </b></h1>
+      </div>
+      <!-- Services -->
+      <div class="w3-container" id="services" style="margin-top:75px">
+        <h1 class="w3-xxxlarge w3-text-red"><b>General Information</b></h1>
+        <hr style="width:50px;border:5px solid red" class="w3-round">
+        <div style="font-size:24px;">
+          <p><b>Dear colleagues, friends!</b>
           <p style="text-indent:64px; text-align:justify; ">Applications for participation in the <b>2nd INTERNATIONAL
-              SCIENTIFIC-PRACTICAL CONFERENCE "PROBLEMS OF CYBER SECURITY OF INFORMATION AND TELECOMMUNICATION SYSTEMS"
-              (PCSI&ТS)</b> are continuing, which will be held on April 11-12, 2019 at the address: 24 Bohdan
+            SCIENTIFIC-PRACTICAL CONFERENCE "PROBLEMS OF CYBER SECURITY OF INFORMATION AND TELECOMMUNICATION SYSTEMS"
+            (PCSI&ТS)</b> are continuing, which will be held on April 11-12, 2019 at the address: 24 Bohdan
             Hawrylyshyn Str., Kyiv, Ukraine, 04116, phone (044) 481-44-78.
           </p>
-        </p>
+          </p>
+        </div>
       </div>
-    </div>
-
-    <!-- Designers -->
-    <div class="w3-container" id="designers" style="margin-top:75px; text-align: justify; font-size:24px;">
-      <h1 class="w3-xxxlarge w3-text-red"><b>Important Dates</b></h1>
-      <hr style="width:50px;border:5px solid red" class="w3-round">
-      <p style=""><b> March 11</b> is the deadline for registration and submission of abstracts.</p>
-      <p>Until <b>March 15 - transfer of the organizational fee.</b></p>
-      <p><b>11 April, 2019:</b></p>
-      - from 09:00 to 10:00 – registration of conference participants (4th floor).
-      <br>- from 09:00 to 16:00 – plenary meeting (Assembly Hall).
-      <br>- from 12:00 to 13:00 – a break in the meeting.
-      <br>- from 16:30 – friendly dinner.
-      <p><b>12 April, 2019:</b></p>
-      - from 10:00 to 16:00 the continuation of the Conference. Sectional meetings (see your audience
-      number in the Conference program).
-      <br>- from 14:30 – conclusions of the conference (Assembly Hall)
-      <p>For more information, see the link below:</p>
-      <p>Site of the Department of Cyber security and Information Protection of Taras Shevchenko National
-        University of Kyiv – <a href="http://kbzi.knu.ua"> http://kbzi.knu.ua </a></p>
-      <p>Phone: (044) 481-44-78.</p>
-      <p>Or you can just scan this QR-code:</p>
-      <div style="text-align: center;">
-        <p><img src="/img/qr-code-1.jpg">
-          <p><b>Faithfully yours, organizing committee of the conference.</b></p>
-      </div>
-
-      <div class="w3-container" id="prog-com" style="margin-top:75px; text-align: justify; font-size:24px;">
-        <h1 class="w3-xxxlarge w3-text-red"><b>PROGRAM COMMITEE</b></h1>
+      <!-- Designers -->
+      <div class="w3-container" id="designers" style="margin-top:75px; text-align: justify; font-size:24px;">
+        <h1 class="w3-xxxlarge w3-text-red"><b>Important Dates</b></h1>
         <hr style="width:50px;border:5px solid red" class="w3-round">
-        <p>
-          <b><i>Chairman:</i></b><br>
-          <b>Zakusilo Oleh</b>, Academician of Academy of Educational Sciences of Ukraine, Doctor of Physical
-          and Mathematical Science, Professor, the first vice-rector of Taras Shevchenko National University of
-          Kyiv.
+        <p style=""><b> March 11</b> is the deadline for registration and submission of abstracts.</p>
+        <p>Until <b>March 15 - transfer of the organizational fee.</b></p>
+        <p><b>11 April, 2019:</b></p>
+        - from 09:00 to 10:00 – registration of conference participants (4th floor).
+        <br>- from 09:00 to 16:00 – plenary meeting (Assembly Hall).
+        <br>- from 12:00 to 13:00 – a break in the meeting.
+        <br>- from 16:30 – friendly dinner.
+        <p><b>12 April, 2019:</b></p>
+        - from 10:00 to 16:00 the continuation of the Conference. Sectional meetings (see your audience
+        number in the Conference program).
+        <br>- from 14:30 – conclusions of the conference (Assembly Hall)
+        <p>For more information, see the link below:</p>
+        <p>Site of the Department of Cyber security and Information Protection of Taras Shevchenko National
+          University of Kyiv – <a href="http://kbzi.knu.ua"> http://kbzi.knu.ua </a>
         </p>
-        <p>
-          <b><i>Vice-Chairman:</i></b><br>
-          <b>Oksiiuk Oleksandr</b>, Doctor of Engineering Science, Professor, Taras Shevchenko National
-          University of Kyiv, Head of Department of Cyber security and Information Protection of Taras
-          Shevchenko National University of Kyiv.
-        </p>
-        <p>
-          <b><i>Program Committee Members:</i></b><br>
-          <b>Blaunstein Natan</b>, Doctor of Engineering Science, Proffesor., Ben-Gurion University of the
-          Negev (Israel).<br>
-          <b>Eugenia Kovacheva</b>, PhD., professor University of Library Studies and Information Technologies,
-          Sofia, Bulgaria.<br>
-          <b>Georgi Dimitroy</b>, PhD., professor University of Library Studies and Information Technologies,
-          Sofia, Bulgaria.<br>
-          <b>Iavich Maksim</b>, PhD., professor, President of scientific cyber security association. Caucasus
-          University, Tbilisi.<br>
-          <b>Blintsov Volodimir</b>, Doctor of Engineering Science, Professor, vice-rector of scientific work
-          of Admiral Makarov National University of Shipbuilding.<br>
-          <b>Buriachok Volodimir</b>, Doctor of Engineering Science, Professor, Professor of Department of
-          information technologies and mathematics of Borys Hrinchenko Kyiv University.<br>
-          <b>Bichkov Alexey</b>, PhD in Physical and Mathematical Science, Assosiate Orofessor, Head of
-          Department of program systems and technologies of the faculty of information technologies of Taras
-          Shevchenko National University of Kyiv.<br>
-          <b>Vasiliu Yevgen</b>, Doctor of Engineering Science, Professor, director of Educational and
-          scientific institute "Radio, television and informational security" Odessa National Academy of
-          Telecommunications.<br>
-          <b>Horobenko Ivan</b>, Doctor of Engineering Science, Professor, Professor of Department of
-          informational systems and technologies security of V. N. Karazin Kharkiv National University.<br>
-          <b>Hrebenyuk Alexey</b>, Director of "High-tech bureau".<br>
-          <b>Dashkovska Olena</b>, PhD in Chemistry Science, Assosiate professor, senior researcher of the
-          department of modernization of higher education of State Scientific Institution "Institute of the
-          Modernization of the Content of Education".<br>
-          <b>Dovbeshko Stanislav</b>, PhD in Engineering Science, Associate Professor, Director of Scientific
-          and educational institute of information protection, State University of Telecommunications.<br>
-          <b>Dudykevych Valerii</b>, Doctor of Engineering Science, Professor, Head of Department of
-          information protection of Lviv Polytechnic National University.<br>
-          <b>Karpinskyi Mykola</b>, Doctor of Engineering Science, Professor, Head of Department of computer
-          science and automation of University in Bielsko-Biała (the Republic of Poland).<br>
-          <b>Korneiko Oleksandr</b>, PhD in Engineering Science, Professor, G.E. Pukhov Institute of Simulation
-          Problems in Energy Engineering down the NAS of Ukraine.<br>
-          <b>Kulianytsia Oleksandr</b>, PhD in Engineering Science, General Director of "Krypton".<br>
-          <b>Machalin Igor</b>, Doctor of Engineering Science, Professor, Director of Educational-Scientific
-          Institute of Aeronavigation, Electronics and Telecommunications of NAU. <br>
-          <b>Machuskyi Yevhenii</b>, Doctor of Engineering Science, Professor, Honored Worker of science and
-          technology of Ukraine, Head of Department of physical and technical means of information protection
-          of National Technical University of Ukraine "Igor Sikorsky Kyiv Polytechnic Institute".<br>
-          <b>Politanskyi Leonid</b>, Doctor of Engineering Science, Professor, Head of Department of radio
-          engineering and informational security of Yuriy Fedkovych Chernivtsi National University.<br>
-          <b>Skrynyk Oleksandr</b>, Advisor to the Chairman of the State of Special Communications and
-          Information Protection Service of Ukraine.<br>
-          <b>Subach Ihor</b>, Doctor of Engineering Science, Associate Professor, Head of Department of
-          Institute of special communications of National Technical University of Ukraine "Igor Sikorsky Kyiv
-          Polytechnic Institute".<br>
-          <b>Tadeiev Petro</b>, PhD in Physical and Mathematical Sciences, Doctor of Pedagogical Science,
-          Professor, National University of Water and Environment Engineering, Rivne.
-        </p>
+        <p>Phone: (044) 481-44-78.</p>
+        <p>Or you can just scan this QR-code:</p>
+        <div style="text-align: center;">
+          <p><img src="/img/qr-code-1.jpg">
+          <p><b>Faithfully yours, organizing committee of the conference.</b></p>
+        </div>
+        <div class="w3-container" id="prog-com" style="margin-top:75px; text-align: justify; font-size:24px;">
+          <h1 class="w3-xxxlarge w3-text-red"><b>PROGRAM COMMITEE</b></h1>
+          <hr style="width:50px;border:5px solid red" class="w3-round">
+          <p>
+            <b><i>Chairman:</i></b><br>
+            <b>Zakusilo Oleh</b>, Academician of Academy of Educational Sciences of Ukraine, Doctor of Physical
+            and Mathematical Science, Professor, the first vice-rector of Taras Shevchenko National University of
+            Kyiv.
+          </p>
+          <p>
+            <b><i>Vice-Chairman:</i></b><br>
+            <b>Oksiiuk Oleksandr</b>, Doctor of Engineering Science, Professor, Taras Shevchenko National
+            University of Kyiv, Head of Department of Cyber security and Information Protection of Taras
+            Shevchenko National University of Kyiv.
+          </p>
+          <p>
+            <b><i>Program Committee Members:</i></b><br>
+            <b>Blaunstein Natan</b>, Doctor of Engineering Science, Proffesor., Ben-Gurion University of the
+            Negev (Israel).<br>
+            <b>Eugenia Kovacheva</b>, PhD., professor University of Library Studies and Information Technologies,
+            Sofia, Bulgaria.<br>
+            <b>Georgi Dimitroy</b>, PhD., professor University of Library Studies and Information Technologies,
+            Sofia, Bulgaria.<br>
+            <b>Iavich Maksim</b>, PhD., professor, President of scientific cyber security association. Caucasus
+            University, Tbilisi.<br>
+            <b>Blintsov Volodimir</b>, Doctor of Engineering Science, Professor, vice-rector of scientific work
+            of Admiral Makarov National University of Shipbuilding.<br>
+            <b>Buriachok Volodimir</b>, Doctor of Engineering Science, Professor, Professor of Department of
+            information technologies and mathematics of Borys Hrinchenko Kyiv University.<br>
+            <b>Bichkov Alexey</b>, PhD in Physical and Mathematical Science, Assosiate Orofessor, Head of
+            Department of program systems and technologies of the faculty of information technologies of Taras
+            Shevchenko National University of Kyiv.<br>
+            <b>Vasiliu Yevgen</b>, Doctor of Engineering Science, Professor, director of Educational and
+            scientific institute "Radio, television and informational security" Odessa National Academy of
+            Telecommunications.<br>
+            <b>Horobenko Ivan</b>, Doctor of Engineering Science, Professor, Professor of Department of
+            informational systems and technologies security of V. N. Karazin Kharkiv National University.<br>
+            <b>Hrebenyuk Alexey</b>, Director of "High-tech bureau".<br>
+            <b>Dashkovska Olena</b>, PhD in Chemistry Science, Assosiate professor, senior researcher of the
+            department of modernization of higher education of State Scientific Institution "Institute of the
+            Modernization of the Content of Education".<br>
+            <b>Dovbeshko Stanislav</b>, PhD in Engineering Science, Associate Professor, Director of Scientific
+            and educational institute of information protection, State University of Telecommunications.<br>
+            <b>Dudykevych Valerii</b>, Doctor of Engineering Science, Professor, Head of Department of
+            information protection of Lviv Polytechnic National University.<br>
+            <b>Karpinskyi Mykola</b>, Doctor of Engineering Science, Professor, Head of Department of computer
+            science and automation of University in Bielsko-Biała (the Republic of Poland).<br>
+            <b>Korneiko Oleksandr</b>, PhD in Engineering Science, Professor, G.E. Pukhov Institute of Simulation
+            Problems in Energy Engineering down the NAS of Ukraine.<br>
+            <b>Kulianytsia Oleksandr</b>, PhD in Engineering Science, General Director of "Krypton".<br>
+            <b>Machalin Igor</b>, Doctor of Engineering Science, Professor, Director of Educational-Scientific
+            Institute of Aeronavigation, Electronics and Telecommunications of NAU. <br>
+            <b>Machuskyi Yevhenii</b>, Doctor of Engineering Science, Professor, Honored Worker of science and
+            technology of Ukraine, Head of Department of physical and technical means of information protection
+            of National Technical University of Ukraine "Igor Sikorsky Kyiv Polytechnic Institute".<br>
+            <b>Politanskyi Leonid</b>, Doctor of Engineering Science, Professor, Head of Department of radio
+            engineering and informational security of Yuriy Fedkovych Chernivtsi National University.<br>
+            <b>Skrynyk Oleksandr</b>, Advisor to the Chairman of the State of Special Communications and
+            Information Protection Service of Ukraine.<br>
+            <b>Subach Ihor</b>, Doctor of Engineering Science, Associate Professor, Head of Department of
+            Institute of special communications of National Technical University of Ukraine "Igor Sikorsky Kyiv
+            Polytechnic Institute".<br>
+            <b>Tadeiev Petro</b>, PhD in Physical and Mathematical Sciences, Doctor of Pedagogical Science,
+            Professor, National University of Water and Environment Engineering, Rivne.
+          </p>
+        </div>
+        <div class="w3-container" id="org-com" style="margin-top:75px; text-align: justify; font-size:24px;">
+          <h1 class="w3-xxxlarge w3-text-red"><b>ORGANIZATIONAL COMMITEE</b></h1>
+          <hr style="width:50px;border:5px solid red" class="w3-round">
+          <p>
+            <b><i>Chairman:</i></b><br>
+            <b>Nakonechnyi Volodymyr</b>, Doctor of Engineering Science, Professor of Department of Cyber security and Information Protection, Taras Shevchenko National University
+          </p>
+          <p>
+            <b><i>Vice-Chairmen:</i></b><br>
+            <b>Babenko Tetiana</b>, Doctor of Engineering Science, Professor of Department of Cyber security and Information Protection, Taras Shevchenko National University of Kyiv.
+            <br>
+            <b>Bickov Alexey</b>, PhD in Physical and Mathematical Science, Assosiate Orofessor, Head of Department of program systems and technologies of the faculty of information technologies of Taras Shevchenko National University of Kyiv.
+          </p>
+          <p>
+            <b><i>Organizational Committee Members:</i></b><br>
+            <b>Вuchyk Serhii</b>, Doctor of Engineering Science, Professor of Department of Cyber security and Information Protection, Taras Shevchenko National University of Kyiv.<br>
+            <b>Toliupa Serhii</b>, Doctor of Engineering Science, Professor of Department of Cyber security and Information Protection, Taras Shevchenko National University of Kyiv.<br>
+            <b>Shevchenko Victor</b>, Doctor of Engineering Science, Professor of Department of program systems and technologies aras Shevchenko National University of Kyiv.<br>
+            <b>Yudin Oleksandr</b>, Doctor of Engineering Science, Professor of Department of Cyber security and Information Protection, Taras Shevchenko National University of Kyiv.
+          </p>
+        </div>
+        <div class="w3-container" id="researcher" style="margin-top:75px; text-align: justify; font-size:24px;">
+          <h1 class="w3-xxxlarge w3-text-red"><b>RESEARCH SECRETARY OF THE CONFERENCE</b></h1>
+          <hr style="width:50px;border:5px solid red" class="w3-round">
+          <p>
+            <b><i>Chairman:</i></b><br>
+            <b>Brailovskyi Mykola</b>,PhD in Engineering Science, Associate Professor, Taras Shevchenko National University of Kyiv
+          </p>
+        </div>
+        <div class="w3-container" id="organizers" style="margin-top:75px; text-align: justify; font-size:24px;">
+          <h1 class="w3-xxxlarge w3-text-red"><b>ORGANIZERS OF THE CONFERENCE</b></h1>
+          <hr style="width:50px;border:5px solid red" class="w3-round">
+          <p>
+          <ul style = "list-style-type: square;">
+            <li> Faculty of Information Technologies of the Taras Shevchenko National University of Kyiv;</li>
+            <li>	Physical-Technical Institute of the National Technical University of Ukraine "Kyiv Polytechnic Institute".</li>
+            <li>	Institute of Computer Information Technologies of the National Aviation University;</li>
+            <li>	State Service for Special Communications and Infor-mation Protection of Ukraine.</li>
+            <li> Research Center "Thesis" of the National Technical University of Ukraine "Kyiv Polytechnic Institute".</li>
+            <li>	The State Enterprise "Ukrainian Special Systems".</li>
+            <li>	State Scientific Institution "Institute for the Moderni-zation of the Content of Education".</li>
+            <li> Research and Implementation Firm "Krypton".</li>
+          </ul>
+          </p>
+        </div>
+        <div class="w3-container" id="theme" style="margin-top:75px; text-align: justify; font-size:24px;">
+          <h1 class="w3-xxxlarge w3-text-red"><b>THEMATIC CONFERENCE</b></h1>
+          <hr style="width:50px;border:5px solid red" class="w3-round">
+          <p>
+          <ul style="list-style-type: square;">
+            <li><b>	SECTION 1.</b> "Scientific, technical and practical aspects of creation and use of safety means of information and telecommunication systems".
+            <li><b>	SECTION 2.</b> "Methods, tools and measures for information security management.
+          </ul>
+          </p>
+        </div>
+        <div class="w3-container" id="conditions" style="margin-top:75px; text-align: justify; font-size:24px;">
+          <h1 class="w3-xxxlarge w3-text-red"><b>CONDITIONS OF PARTICIPATION IN THE CONFERENCE AND PUBLISHING IN THE COLLECTION OF REPORTS</b></h1>
+          <hr style="width:50px;border:5px solid red" class="w3-round">
+          <p style="text-indent:64px; text-align:justify; ">To participate in the conference, it is necessary to submit the following materials to the secretariat of the organizing committee by March 11, 2019: registration form; thesis of the report; a receipt for the payment of a registration fee in the amount of 200 UAH.
+          </p>
+          <p style="text-indent:64px; text-align:justify; ">Students of the Taras Shevchenko National University are typed in a collection of abstracts for free.</p>
+          <p style="text-indent:64px; text-align:justify; ">Materials submitted without completing the application will not be considered.
+          </p>
+        </div>
+        <div class="w3-container" id="requirements" style="margin-top:75px; text-align: justify; font-size:24px;">
+          <h1 class="w3-xxxlarge w3-text-red"><b>REQUIREMENTS TO THE STUDY OF THE REPORT</b></h1>
+          <hr style="width:50px;border:5px solid red" class="w3-round">
+          <p style="text-indent:64px; text-align:justify; ">No more than three collaborators per report are allowed.. Abstracts should convey the main content of the report and contain: the statement of the scientific problem (task) in general form; formulation of the task (purpose) of the research, substantiation of its relevance and information about used literature. The author is responsible for the scientific content and presentation of the material. Do not set page numbering. Abstracts of the report - up to 2-4 pages of <b>full</b> text.
+          </p>
+          <p style="text-indent:64px; text-align:justify; ">Polygraph Requirements: page format – A5, Font - Times New Roman 11; line spacing - single; The indent of the first line of each paragraph is 0.5 cm.</p>
+          <p style="text-indent:64px; text-align:justify; ">Fields: top, left and right - 2.0; lower - 2,2. Formulas need to be embedded in text from the formula editor MathType (Microsoft Eq. 3.0).
+          </p>
+          <p style="text-indent:64px; text-align:justify; ">Font of Times New Roman 9, bold.
+          </p>
+          <p style="text-indent:64px; text-align:justify; ">When drawing up the list of literature it is necessary to apply a national standard, identical to GOST 7.1.-2003
+          </p>
+          <p style="text-indent:64px; text-align:justify; ">Materials are typed in the following order:
+          <ol>
+            <li> UDC - alignment on the left edge;
+            <li>  initials and surnames of the authors - alignment on the right edge, bold font;
+            <li> the name of the organization, e-mail - alignment on the right-hand side, italics;
+            <li> title of the report - center alignment;
+            <li> the text of the report;
+            <li> Table headers - Right-aligned alignment.
+          </ol>
+          </p>
+        </div>
+        <div class="w3-container" id="registration" style="margin-top:75px; text-align: justify; font-size:24px;">
+          <h1 class="w3-xxxlarge w3-text-red"><b>REGISTRATION FORM</b></h1>
+          <hr style="width:50px;border:5px solid red" class="w3-round">
+          <p>
+            All submissions have to be made using EasyChair system:
+          <p><a href= "https://easychair.org/cfp/pcsits-2019">https://easychair.org/cfp/pcsits-2019</a>
+          <p><a href="https://easychair.org/conferences/?conf=pcsis2019">https://easychair.org/conferences/?conf=pcsis2019</a>
+          </p>
+        </div>
+        <div class="w3-container" id="secretariat" style="margin-top:75px; text-align: justify; font-size:24px;">
+          <h1 class="w3-xxxlarge w3-text-red"><b>SECRETARIAT OF THE CONFERENCE</b></h1>
+          <hr style="width:50px;border:5px solid red" class="w3-round">
+          <b>For more information, contact:</b>
+          <div style="text-indent:64px; text-align:justify; ">Phone.: (044) 481-44-78,</div>
+          <div style="text-indent:64px; text-align:justify; ">E-mail: pcsits@ukr.net</div>
+          <b>Zubina Ruslana</b>
+          <b>Boguslavska Olena</b> (section 1).
+          <div style="text-indent:64px; text-align:justify; ">Phone: (050) 313-54-33</div>
+          <b>Slipachuk Lada </b>(section 2).
+          <div style="text-indent:64px; text-align:justify; ">Phone: (093) 270-34-68</div>
+        </div>
+        <div class="w3-container" id="bank" style="margin-top:75px; text-align: justify; font-size:24px;">
+          <h1 class="w3-xxxlarge w3-text-red"><b>BANK DETAILS</b></h1>
+          <hr style="width:50px;border:5px solid red" class="w3-round">
+          <div style="text-indent:64px; text-align:justify; ">Р/Р -  31256356214095   ГУ ДКСУ у м. Києві</div>
+          <div style="text-indent:64px; text-align:justify; ">код банка – 820172</div>
+          <div style="text-indent:64px; text-align:justify; ">код ЕДРПОУ – 02070944</div>
+          <div style="text-indent:64px; text-align:justify; ">Recipient - Taras Shevchenko National Universi-ty of Kyiv, Conference "Problems of Cybersecurity information and telecommunication systems "</div>
+          <div style="margin:20%"></div>
+        </div>
       </div>
+      <!-- End page content -->
     </div>
+    <!-- W3.CSS Container -->
+    <script>
+      // Script to open and close sidebar
+      function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+      }
 
-    <!-- End page content -->
-  </div>
+      function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+      }
 
-  <!-- W3.CSS Container -->
-
-  <script>
-    // Script to open and close sidebar
-    function w3_open() {
-      document.getElementById("mySidebar").style.display = "block";
-      document.getElementById("myOverlay").style.display = "block";
-    }
-
-    function w3_close() {
-      document.getElementById("mySidebar").style.display = "none";
-      document.getElementById("myOverlay").style.display = "none";
-    }
-
-    // Modal Image Gallery
-    function onClick(element) {
-      document.getElementById("img01").src = element.src;
-      document.getElementById("modal01").style.display = "block";
-      var captionText = document.getElementById("caption");
-      captionText.innerHTML = element.alt;
-    }
-  </script>
-
-</body>
-
+      // Modal Image Gallery
+      function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+      }
+    </script>
+  </body>
 </html>
